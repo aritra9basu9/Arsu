@@ -1,0 +1,29 @@
+<!-- <h1> Product Details</h1>
+
+<ul>
+    <li> {{ product.name}}</li>
+    <li> {{ product.description}}</li>
+    <li> {{ product.price}}</li>
+</ul>
+
+<h1 [innerText] = "pageTitle"></h1>
+<img [src]="imageUrl" alt=""> -->
+
+<!-- event Binding -->
+<!-- <input type ="text" [value]= "pageTitle" #indata>
+<button (click) = "submitAction(indata)">Submit</button> -->
+
+
+<!-- <input type ="text" [value]= "pageTitle" #indata>
+<button (click) = "submitAction(indata)">Submit</button>
+<h1>{{message}}</h1> -->
+
+<!-- <input type="text" name="message" [(ngModel)]="message">
+<h1>{{message}}</h1> -->
+
+<ul>
+  <li *ngFor="let product of productList">
+      {{ product.name }} -- {{ product.price }}
+  </li>
+
+</ul>

@@ -1,0 +1,21 @@
+[{
+    "id":1,
+    "name":"Lenovo Laptop",
+    "price":30000,
+    "quantity":10000
+
+},
+{
+    "id":2,
+    "name":"Dell Laptop",
+    "price":50000,
+    "quantity":15000
+
+},
+{
+    "id":3,
+    "name":"Hp Laptop",
+    "price":35000,
+    "quantity":20000
+
+}]

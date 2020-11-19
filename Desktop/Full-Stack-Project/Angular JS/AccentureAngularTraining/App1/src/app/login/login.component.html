@@ -1,0 +1,9 @@
+<h1> Sign In Form</h1>
+<div [ngClass]="isActive? 'class1' : 'class2'">
+<form action ="" method="post">
+   Email: <input type= "email" name ="email" [(ngModel)]= user.email placeholder="Enter your email"><br/>
+   Password: <input type= "password" name ="password" [(ngModel)]= user.password placeholder="Enter your password"><br/>
+   <button (click)="submit()">Sign In </button>
+
+</form>
+</div>
