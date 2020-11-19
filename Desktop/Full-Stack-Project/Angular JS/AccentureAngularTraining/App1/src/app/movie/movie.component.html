@@ -1,0 +1,49 @@
+<h2 align =centre> Rate your favourite Movie</h2>
+<div align="centre">
+    <form [formGroup]="movieForm">
+        <table border='2'>
+            <tr>
+                <td>
+                    <label>User Name</label>
+                </td>
+                <td>
+                    <input type="text" formControlName="userName" length="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <input type="radio" value="male" formControlName="selectedGender" > Male
+                    <input type="radio" value="Female" formControlName="selectedGender" > Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for= "selectedMovie">SelectedMovie</label>
+                </td>
+                <td>
+                   <select class="form-control" formControlName="selectedMovie" length="20">
+                       <option [value]="">---Select---</option>
+                       <option *ngFor="let m of movies" [value]="m">{{m}}</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for= "selectedRating">SelectedRating</label>
+                </td>
+                <td>
+                   <select class="form-control" formControlName="selectedRating">
+                       <option [value]="">---Select---</option>
+                       <option *ngFor="let r of givenRating" [value]="r">{{r}}</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="centre"><button value="submit" (click)="doProcess()">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
