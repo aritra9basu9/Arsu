@@ -1,0 +1,19 @@
+<form [formGroup]="customer" (ngSubmit)="save()">
+    Id: <input type="text" formControlName="id"/>
+    <span *ngIf="id.touched && id.invalid">
+        Please enter id
+    </span>
+    <br/>
+    First Name: <input type="text" formControlName="firstName"/>
+    <span *ngIf="firstName.touched && firstName.invalid">
+        Please enter First Name
+    </span>
+    <br/>
+    Last Name: <input type="text" formControlName="lastName"/>
+    <span *ngIf="lastName.touched && lastName.invalid">
+        Please enter Last Name
+    </span>
+     <br/>
+
+     <input type="submit" value="submit"/>
+</form>

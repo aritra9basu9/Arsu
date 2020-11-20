@@ -1,0 +1,27 @@
+<h1 *ngIf ="customers.length !=0">All Customers</h1>
+
+<div *ngIf ="customers.length !=0">
+    <table border='1'>
+        <tr>
+            <th> ID </th>
+            <th> First Name </th>
+            <th> Last Name </th>
+            <th> Read </th>
+            <th> Update </th>
+            <th> Delete </th>
+        </tr>
+        <tr *ngFor="let customer of customers">
+            <td> {{ customer.id }}</td>
+            <td> {{ customer.firstName }}</td>
+            <td> {{ customer.lastName }}</td>
+            <td>
+                <button (click)="read(customer.id)">Read</button>
+            </td>
+            <td><button (click)="readForUpdate(customer.id)">Update</button>
+            </td>
+           
+            <td><button (click)="delete(customer.id)">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>
