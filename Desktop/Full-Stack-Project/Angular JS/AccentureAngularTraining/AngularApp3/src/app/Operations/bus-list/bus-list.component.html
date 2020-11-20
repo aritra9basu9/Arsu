@@ -1,0 +1,32 @@
+<h2 id="headstyle">Bus Info</h2>
+<div id="headstyle1" >
+<table id="bus">
+<thead>
+    <th>S.NO</th>
+    <th>Source</th>
+    <th>Destination</th>
+    <th>Bus Number</th>
+    <th>Bus Type</th>
+    <th colspan="2">Operations</th>
+</thead>
+
+<tbody>
+    <tr *ngFor="let b of buses; let sno=index">
+        <td>{{sno+1}}</td>
+        <td hidden>{{b.busId}}</td>
+        <td>{{b.source}}</td>
+        <td>{{b.destination}}</td>
+        <td>{{b.busNumber}}</td>
+        <td>{{b.busType}}</td>
+        <td><button (click)="updateBus(b.busId)">Update</button></td>
+        <td><button (click)="deleteBus(b.busId)">Delete</button>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+<div>
+    <ul>
+     <li> <a [routerLink] = "['/addBus']">Add Bus</a></li>
+    </ul>
+</div>

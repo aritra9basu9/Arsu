@@ -1,0 +1,82 @@
+
+.linkstyle{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0%;
+
+}
+#headstyle1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+
+#headstyle{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    color: black;
+}
+#bus {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 0%;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+  
+  #bus td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #bus tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #bus tr:hover {background-color: #ddd;}
+  
+  #bus th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+  #bus th:last-child {
+    text-align: center;
+ }
+
+  ul {
+    list-style-type: none;
+    padding: 0%;
+    overflow: hidden;
+    align-items: center;
+    background-color:cadetblue;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  li a:hover {
+    background-color:#4CAF50;
+  }
+
+  
